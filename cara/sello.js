@@ -27,4 +27,3 @@
                 }
                 prompt("Si desea continuar selccione 3 y si desea salir del juego seleccione 4");
              }
-        
