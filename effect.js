@@ -4,7 +4,6 @@ let coin = document.querySelector(".coin");
 let flipBtn = document.querySelector("#flip-button");
 let resetBtn = document.querySelector("#reset-button");
 
-//girar moneda
 flipBtn.addEventListener("click", () =>{
   let i = Math.floor(Math.random() * 2);
   coin.getElementsByClassName.animation = "none";
@@ -22,7 +21,6 @@ flipBtn.addEventListener("click", () =>{
   setTimeout(updateStats,3000);
   disableButton();
 });
-//girar moneda
 
 function updateStats(){
   document.querySelector("#heads-count").textContent = `Caras: ${heads}`;

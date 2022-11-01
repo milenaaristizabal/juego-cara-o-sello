@@ -5,10 +5,9 @@ boton.addEventListener('click',()=>{
         let opciones = document.getElementById('opciones').value
         let Suma=0,Resta=0, salir=0;
 
-        let maquina=1+(Math.random() * 2);
+        let maquina=Math.floor(Math.random() * 2)+1;
           
-            while (salir!=4) {
-                let nombre = prompt("Ingrese su nombre");
+            
 
             	alert("La cantidad que ha apostado es: $"+dinero+"\n");
             	
@@ -24,7 +23,6 @@ boton.addEventListener('click',()=>{
                     Resta= Resta-Suma;
                 alert("La cantidad de dinero que tiene acumulado hasta ahora es: "+Resta+" \n");
                 }
-                prompt("Si desea continuar selccione 3 y si desea salir del juego seleccione 4");
              }
-            })
+            )
         

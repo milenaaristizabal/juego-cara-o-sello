@@ -22,6 +22,22 @@ function validar(){
 let boton = document.getElementById('boton')
 boton.addEventListener('click',()=>{
 
-let nombre = document.getElementById('1').value
+    let maquina=1+(Math.random() * 2);
 
-})
+let opcion = document.getElementById('1').value
+let nombre = document.getElementById('nombre').value
+
+ if (opcion==maquina){
+                    alert("Felicidades" +nombre+ "usted ha ganado, la opcion de la maquina fue: "+maquina+ " \n");
+                    Suma = Suma+dinero;
+                alert("La cantidad de dinero que ha sumado es: "+Suma+" \n");
+                }
+
+                else{
+                    alert(":( Perdiste intentalo de nuevo "+nombre);
+                    Resta= Resta-Suma;
+                alert("La cantidad de dinero que tiene acumulado hasta ahora es: "+Resta+" \n");
+                }
+                prompt("Si desea continuar selccione 3 y si desea salir del juego seleccione 4");
+             }
+            )
