@@ -3,7 +3,7 @@ boton.addEventListener('click',()=>{
 		let nombre = document.getElementById('nombre').value
         let dinero = document.getElementById('cdinero').value
         let opciones = document.getElementById('opciones').value
-        let Suma=0,Resta=0, salir=0;
+        let Suma=0,Resta=0, salir=0, monto=0;
 
         salir = confirm("comenzar");
         let contador = 0;
@@ -11,7 +11,9 @@ boton.addEventListener('click',()=>{
 
         let maquina=Math.floor(Math.random() * 2)+1;
           
-            	alert(`La cantidad que ha apostado es : $${parseInt(dinero)}`);
+        monto = prompt("Ingrese la cantidad de dinero que quiere apostar")
+               monto = parseInt(monto)
+              alert(`La cantidad que ha apostado es : $${(monto)}`);
 
             	console.log(parseInt(maquina))
 
@@ -19,7 +21,7 @@ boton.addEventListener('click',()=>{
 
                 if (opciones==parseInt(maquina)){
                     alert("Felicidades " +nombre+ " usted ha ganado, la opcion de la maquina fue: "+maquina+ " \n");
-                    Suma = Suma+dinero;
+                    Suma = Suma+monto;
                 alert(`La cantidad de dinero que ha sumado es: ${parseInt(Suma)}`);
                 
                 }
@@ -41,6 +43,7 @@ boton.addEventListener('click',()=>{
              }
              
             )
+
 
             
             let boton2 = document.getElementById('boton2')
